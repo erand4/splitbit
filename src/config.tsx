@@ -22,16 +22,19 @@ const config: SiteConfig = {
             {
                 title: "Email",
                 description: "erik@splitbit.se",
+                href: "mailto:erik@splitbit.se",
                 icon: <MailIcon className="h-8 w-8 text-primary" />
             },
             {
                 title: "LinkedIn",
                 description: "linkedin.com/in/erik-andersson-a702725",
+                href: "https://www.linkedin.com/in/erik-andersson-a702725",
                 icon: <LinkedinIcon className="h-8 w-8 text-primary" />
             },
             {
                 title: "GitHub",
                 description: "github.com/erand4",
+                href: "https://www.github.com/erand4",
                 icon: <Github className="h-8 w-8 text-primary" />
             }
         ]

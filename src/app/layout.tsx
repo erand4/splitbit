@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import config from "@/config";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -10,8 +11,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-    title: "Splitbit",
-    description: "Splitbit AB is a software development company based in Sweden."
+    title: config.title,
+    description: config.description
 };
 
 export default function RootLayout({
@@ -21,6 +22,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+                <link rel="mask-icon" href="/icon.svg" color="#000000" />
+                <meta name="theme-color" content="#ffffff" />
+                <link rel="preload" href="/profile_hover.jpg" as="image" />
+            </head>
             <body className={cn("min-h-screen bg-background antialiased", manrope.className)}>
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     {children}

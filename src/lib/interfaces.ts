@@ -16,6 +16,7 @@ export interface SiteConfig {
         methods: {
             title: string;
             description: string;
+            href: string;
             icon: React.ReactNode;
         }[];
     };

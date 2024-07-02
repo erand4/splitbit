@@ -1,5 +1,6 @@
 import Image from "next/image";
 import config from "@/config";
+import Contact from "./contact";
 
 export default function Hero() {
     return (
@@ -18,15 +19,10 @@ export default function Hero() {
                                 </p>
                             </div>
                         </div>
+                        <Contact />
                     </div>
-                    <div className="mx-auto overflow-hidden rounded-xl object-cover sm:w-full order-first sm:order-last lg:aspect-square">
-                        <Image
-                            src="/profile.jpg"
-                            width="1024"
-                            height="1024"
-                            alt={`${config.developer.name} profile picture`}
-                            className=" transition duration-300 ease-in-out hover:scale-105"
-                        />
+                    <div className="mx-auto overflow-hidden rounded-xl h-[512px] w-full order-first sm:order-last lg:aspect-square sm:sticky sm:top-12">
+                        <div className="w-full h-full bg-[url('/profile.jpg')] hover:bg-[url('/profile_hover.jpg')] bg-center bg-cover transition-all duration-200 hover:scale-[115%]"></div>
                     </div>
                 </div>
             </div>
