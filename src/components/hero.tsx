@@ -19,13 +19,15 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <Image
-                        src="/profile.jpg"
-                        width="1024"
-                        height="1024"
-                        alt={`${config.developer.name} profile picture`}
-                        className="mx-auto overflow-hidden rounded-xl object-cover sm:w-full order-first sm:order-last lg:aspect-square"
-                    />
+                    <div className="mx-auto overflow-hidden rounded-xl object-cover sm:w-full order-first sm:order-last lg:aspect-square">
+                        <Image
+                            src="/profile.jpg"
+                            width="1024"
+                            height="1024"
+                            alt={`${config.developer.name} profile picture`}
+                            className=" transition duration-300 ease-in-out hover:scale-105"
+                        />
+                    </div>
                 </div>
             </div>
         </main>
