@@ -21,7 +21,7 @@ export default function Hero() {
                         </div>
                         <Contact />
                     </div>
-                    <div className="mx-auto overflow-hidden rounded-xl h-[512px] w-full order-first sm:order-last lg:aspect-square sm:sticky sm:top-12">
+                    <div className="mx-auto overflow-hidden rounded-xl h-[400px] md:h-full w-full order-first sm:order-last lg:aspect-square sm:sticky sm:top-12">
                         <div className="w-full h-full bg-[url('/profile.jpg')] hover:bg-[url('/profile_hover.jpg')] bg-center bg-cover transition-all duration-200"></div>
                     </div>
                 </div>
