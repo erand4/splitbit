@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import config from "@/config";
@@ -31,6 +32,7 @@ export default function RootLayout({
             <body className={cn("min-h-screen bg-background antialiased", manrope.className)}>
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     {children}
+                    <Analytics />
                 </ThemeProvider>
             </body>
         </html>
