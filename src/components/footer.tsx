@@ -1,4 +1,4 @@
-import { Logo } from "./logo";
+import config from "@/config";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
             <footer className="container flex flex-col gap-4 sm:flex-row py-6 w-full shrink-0 items-center justify-between">
                 <p className="text-xs text-muted-foreground">
-                    &copy; {year} Splitbit AB (org. 559203-0299). All rights reserved.
+                    &copy; {year} {config.company.name} (org.nr {config.company.orgNr}). All rights reserved.
                 </p>
                 <p className="text-xs text-muted-foreground">
                     The source code is available on{" "}
