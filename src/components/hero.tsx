@@ -13,8 +13,8 @@ export default function Hero() {
                                 {config.developer.name}
                             </h1>
                             <div className="space-y-4">
-                                <h2 className="text-xl font-medium text-muted-foreground">{config.developer.role}</h2>
-                                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                                <h2 className="text-xl font-medium">{config.developer.role}</h2>
+                                <p className="max-w-[600px] text-muted-foreground md:text-lg">
                                     {config.developer.description}
                                 </p>
                             </div>

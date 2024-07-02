@@ -20,22 +20,22 @@ const config: SiteConfig = {
             "If you have any questions or would like to get in touch, please don't hesitate to reach out to me.",
         methods: [
             {
-                title: "Email",
-                description: "erik@splitbit.se",
-                href: "mailto:erik@splitbit.se",
-                icon: <MailIcon className="h-8 w-8 text-primary" />
-            },
-            {
                 title: "LinkedIn",
                 description: "linkedin.com/in/erik-andersson-a702725",
                 href: "https://www.linkedin.com/in/erik-andersson-a702725",
-                icon: <LinkedinIcon className="h-8 w-8 text-primary" />
+                icon: <LinkedinIcon className="h-8 w-8 text-primary stroke-[1.25]" />
             },
             {
                 title: "GitHub",
                 description: "github.com/erand4",
                 href: "https://www.github.com/erand4",
-                icon: <Github className="h-8 w-8 text-primary" />
+                icon: <Github className="h-8 w-8 text-primary stroke-[1.25]" />
+            },
+            {
+                title: "Email",
+                description: "erik@splitbit.se",
+                href: "mailto:erik@splitbit.se",
+                icon: <MailIcon className="h-8 w-8 text-primary stroke-[1.25]" />
             }
         ]
     }
