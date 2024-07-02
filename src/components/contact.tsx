@@ -8,7 +8,7 @@ export default function Contact() {
                     <a
                         href={method.href}
                         key={`contact_method_${index}`}
-                        className="flex items-center gap-4 rounded-lg py-4 px-2 cursor-pointer hover:scale-[105%] hover:p-4 hover:bg-muted transition-all"
+                        className="flex items-center gap-4 rounded-lg p-4 cursor-pointer hover:scale-[98%] hover:bg-muted transition-all"
                     >
                         <span>{method.icon}</span>
                         <div>
