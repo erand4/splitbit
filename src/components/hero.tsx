@@ -7,7 +7,7 @@ export default function Hero() {
         <main className="flex-1 pt-4 pb-12 lg:py-32">
             <div className="container md:px-6">
                 <div className="grid gap-6 sm:grid-cols-[1fr_300px] lg:gap-12 xl:grid-cols-[1fr_500px]">
-                    <div className="flex flex-col justify-start space-y-4">
+                    <div className="flex flex-col justify-start py-4 sm:pt-0 space-y-4">
                         <div className="space-y-1">
                             <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter lg:text-5xl xl:text-6xl/none">
                                 {config.developer.name}
@@ -22,7 +22,7 @@ export default function Hero() {
                         <Contact />
                     </div>
                     <div className="mx-auto overflow-hidden rounded-xl h-[512px] w-full order-first sm:order-last lg:aspect-square sm:sticky sm:top-12">
-                        <div className="w-full h-full bg-[url('/profile.jpg')] hover:bg-[url('/profile_hover.jpg')] bg-center bg-cover transition-all duration-200 hover:scale-[115%]"></div>
+                        <div className="w-full h-full bg-[url('/profile.jpg')] hover:bg-[url('/profile_hover.jpg')] bg-center bg-cover transition-all duration-200"></div>
                     </div>
                 </div>
             </div>
